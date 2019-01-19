@@ -43,7 +43,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, AVAudioPla
         //LOCATION
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestAlwaysAuthorization()
+        locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         
         //audio playing
@@ -55,7 +55,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, AVAudioPla
             //error
         }
         
-
+        
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -63,6 +63,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, AVAudioPla
         let myLocation = CLLocationCoordinate2D(latitude: (location.coordinate.latitude), longitude: (location.coordinate.longitude))
         let camera = GMSCameraPosition.camera(withTarget: myLocation, zoom: 22.0)
         self.mapView.animate(to: camera)
+        print("run")
         
         
         
@@ -84,7 +85,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, AVAudioPla
                     
                     
                 }
-            
+                
             }
             
         }
@@ -117,7 +118,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, AVAudioPla
     @IBAction func doneAction(_ sender: Any) {
         
         ref = Database.database().reference().child("data")
-
+        
         let upperIndex = allPotholeDepth.endIndex - 1
         var totalPotholeDepth = 0.0
         for i in 0...upperIndex{
@@ -127,29 +128,29 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, AVAudioPla
             ref.child(String(i)).child("locationLatitude").setValue(allPotholeLocations[i].latitude)
             ref.child(String(i)).child("locationLongitude").setValue(allPotholeLocations[i].longitude)
             ref.child(String(i)).child("potholeDepth").setValue(allPotholeDepth[i])
-
+            
         }
         
         var avgPotholeDepth : Double = totalPotholeDepth/Double(allPotholeDepth.endIndex)
         potholeLabel.text = String(avgPotholeDepth)
         
-
-
+        
+        
         let polyline = GMSPolyline(path: path)
         if (avgPotholeDepth < -2.8){
             polyline.strokeColor = UIColor.red
             
         }else{
-        if (avgPotholeDepth < -2.3){
-            polyline.strokeColor = UIColor.yellow
-            
-        }else{
+            if (avgPotholeDepth < -2.3){
+                polyline.strokeColor = UIColor.yellow
+                
+            }else{
+                
+                polyline.strokeColor = UIColor.green
+                
+            }
+        }
         
-            polyline.strokeColor = UIColor.green
-            
-        }
-        }
-
         locationManager.stopUpdatingLocation()
         mapView.animate(toLocation: allPotholeLocations[upperIndex])
         mapView.animate(toZoom: 18)
@@ -161,8 +162,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, AVAudioPla
         
         allPotholeDepth.removeAll()
         allPotholeLocations.removeAll()
-
+        
     }
     
-
+    
 }

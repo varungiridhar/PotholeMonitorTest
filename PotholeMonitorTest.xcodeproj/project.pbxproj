@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		04BEA6BFD115A7F5C175617B /* Pods_PotholeMonitorTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3D75CAFE3748963F197DFC /* Pods_PotholeMonitorTestUITests.framework */; };
 		84F6D2A221F3083D0035A92D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84F6D2A121F3083D0035A92D /* GoogleService-Info.plist */; };
-		84F6D2A421F324510035A92D /* PublicMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6D2A321F324510035A92D /* PublicMapViewController.swift */; };
+		84F6D2A621F3A1F00035A92D /* PublicMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6D2A521F3A1F00035A92D /* PublicMapViewController.swift */; };
 		888A8D02DF8FBE0A5A0EC852 /* Pods_PotholeMonitorTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21DDF28816702B508D2E442 /* Pods_PotholeMonitorTestTests.framework */; };
 		C60CD03F21E76E0600BD9D29 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60CD03E21E76E0600BD9D29 /* CoreLocation.framework */; };
 		C683CAC421EB2BB70008347C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C683CAC321EB2BB70008347C /* AVFoundation.framework */; };
@@ -48,7 +48,7 @@
 		4822169A8C182525A6AD2319 /* Pods-PotholeMonitorTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotholeMonitorTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-PotholeMonitorTest/Pods-PotholeMonitorTest.release.xcconfig"; sourceTree = "<group>"; };
 		7323FBA9CBF397F4983ECAE0 /* Pods-PotholeMonitorTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotholeMonitorTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PotholeMonitorTest/Pods-PotholeMonitorTest.debug.xcconfig"; sourceTree = "<group>"; };
 		84F6D2A121F3083D0035A92D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		84F6D2A321F324510035A92D /* PublicMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicMapViewController.swift; sourceTree = "<group>"; };
+		84F6D2A521F3A1F00035A92D /* PublicMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicMapViewController.swift; sourceTree = "<group>"; };
 		93765A58AE6B8D20E0A647CB /* Pods_PotholeMonitorTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PotholeMonitorTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BFEAD4250065B05CEEA26C9 /* Pods-PotholeMonitorTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotholeMonitorTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PotholeMonitorTestTests/Pods-PotholeMonitorTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A8C7FD6EFF0BDDE3F37365A2 /* Pods-PotholeMonitorTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotholeMonitorTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PotholeMonitorTestTests/Pods-PotholeMonitorTestTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 				C6B40C4221E1D7B400DE8D34 /* ViewController.swift */,
 				C683CAC721EB3BEE0008347C /* MenuViewController.swift */,
 				C683CAC921EB3C020008347C /* MapViewController.swift */,
-				84F6D2A321F324510035A92D /* PublicMapViewController.swift */,
+				84F6D2A521F3A1F00035A92D /* PublicMapViewController.swift */,
 				C6B40C4421E1D7B400DE8D34 /* Main.storyboard */,
 				C6B40C4721E1D7B900DE8D34 /* Assets.xcassets */,
 				C6B40C4921E1D7B900DE8D34 /* LaunchScreen.storyboard */,
@@ -453,7 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6B40C4321E1D7B400DE8D34 /* ViewController.swift in Sources */,
-				84F6D2A421F324510035A92D /* PublicMapViewController.swift in Sources */,
+				84F6D2A621F3A1F00035A92D /* PublicMapViewController.swift in Sources */,
 				C683CAC821EB3BEE0008347C /* MenuViewController.swift in Sources */,
 				C6B40C4121E1D7B400DE8D34 /* AppDelegate.swift in Sources */,
 				C683CACA21EB3C020008347C /* MapViewController.swift in Sources */,

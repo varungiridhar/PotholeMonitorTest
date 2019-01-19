@@ -18,12 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="P36-52-Xwc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pV-6Q-oMQ">
-                                <rect key="frame" x="156" y="377" width="63" height="58"/>
+                                <rect key="frame" x="156" y="547" width="63" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="start"/>
                                 <connections>
@@ -60,7 +56,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Public Map"/>
                                 <connections>
-                                    <segue destination="rCF-g2-NWv" kind="presentation" id="iMC-pJ-RFx"/>
+                                    <segue destination="uBc-GY-HrP" kind="presentation" id="qUQ-Qt-WsM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -76,7 +72,7 @@
         <scene sceneID="V5S-oG-Yet">
             <objects>
                 <viewController id="3sb-qx-klD" customClass="MapViewController" customModule="PotholeMonitorTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Jru-RJ-ReG">
+                    <view key="view" contentMode="scaleToFill" id="Jru-RJ-ReG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -88,13 +84,9 @@
                                     <action selector="doneAction:" destination="3sb-qx-klD" eventType="touchUpInside" id="UzL-Uq-wWe"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0bt-0f-C4f">
-                                <rect key="frame" x="0.0" y="111" width="375" height="469"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0bt-0f-C4f">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="580"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="469" id="mGZ-OV-cdy"/>
-                                    <constraint firstAttribute="width" constant="375" id="v2g-lm-Tkg"/>
-                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owN-86-CIC">
                                 <rect key="frame" x="270" y="676" width="89" height="39"/>
@@ -103,6 +95,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVf-81-vXR">
+                                <rect key="frame" x="3" y="727" width="59" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="back"/>
+                                <connections>
+                                    <segue destination="u89-Ap-049" kind="presentation" id="DFa-IS-VKO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -123,33 +123,44 @@
             <point key="canvasLocation" x="1733.5999999999999" y="123.39901477832512"/>
         </scene>
         <!--Public Map View Controller-->
-        <scene sceneID="2yM-uw-rPY">
+        <scene sceneID="eMM-T9-Emn">
             <objects>
-                <viewController id="rCF-g2-NWv" customClass="PublicMapViewController" customModule="PotholeMonitorTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="E4I-K4-0iu">
+                <viewController id="uBc-GY-HrP" customClass="PublicMapViewController" customModule="PotholeMonitorTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LCH-Wt-cyi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZAf-En-tV1" customClass="viewForPGMaps">
-                                <rect key="frame" x="0.0" y="44" width="375" height="530"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6U-cG-M7X">
+                                <rect key="frame" x="3" y="727" width="59" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="back"/>
+                                <connections>
+                                    <segue destination="u89-Ap-049" kind="presentation" id="aHe-AQ-2hR"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jAq-dE-lB6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="580"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Vby-WZ-V8y"/>
+                        <viewLayoutGuide key="safeArea" id="7PT-Si-8Zi"/>
                     </view>
                     <connections>
-                        <outlet property="viewForPGMaps" destination="ZAf-En-tV1" id="h2Q-R2-kBe"/>
+                        <outlet property="viewForPGMaps" destination="jAq-dE-lB6" id="rWZ-BO-Npc"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HRF-hx-FXX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a0l-dT-QdN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1733.5999999999999" y="847.53694581280797"/>
+            <point key="canvasLocation" x="1733.5999999999999" y="816.50246305418727"/>
         </scene>
     </scenes>
     <resources>
-        <image name="road" width="2667" height="4015"/>
+        <image name="back" width="72" height="72"/>
         <image name="start" width="72" height="72"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="PD9-Ay-eOG"/>
+    </inferredMetricsTieBreakers>
 </document>
