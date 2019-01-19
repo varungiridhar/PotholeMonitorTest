@@ -1,0 +1,6 @@
+framework module Pods_PotholeMonitorTestTests {
+  umbrella header "Pods-PotholeMonitorTestTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

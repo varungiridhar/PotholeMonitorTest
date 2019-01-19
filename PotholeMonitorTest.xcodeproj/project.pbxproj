@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04BEA6BFD115A7F5C175617B /* Pods_PotholeMonitorTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3D75CAFE3748963F197DFC /* Pods_PotholeMonitorTestUITests.framework */; };
+		84F6D2A221F3083D0035A92D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84F6D2A121F3083D0035A92D /* GoogleService-Info.plist */; };
+		84F6D2A421F324510035A92D /* PublicMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6D2A321F324510035A92D /* PublicMapViewController.swift */; };
+		888A8D02DF8FBE0A5A0EC852 /* Pods_PotholeMonitorTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21DDF28816702B508D2E442 /* Pods_PotholeMonitorTestTests.framework */; };
+		C60CD03F21E76E0600BD9D29 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60CD03E21E76E0600BD9D29 /* CoreLocation.framework */; };
+		C683CAC421EB2BB70008347C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C683CAC321EB2BB70008347C /* AVFoundation.framework */; };
+		C683CAC621EB2F960008347C /* notification.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C683CAC521EB2F960008347C /* notification.mp3 */; };
+		C683CAC821EB3BEE0008347C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683CAC721EB3BEE0008347C /* MenuViewController.swift */; };
+		C683CACA21EB3C020008347C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683CAC921EB3C020008347C /* MapViewController.swift */; };
 		C6B40C4121E1D7B400DE8D34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B40C4021E1D7B400DE8D34 /* AppDelegate.swift */; };
 		C6B40C4321E1D7B400DE8D34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B40C4221E1D7B400DE8D34 /* ViewController.swift */; };
 		C6B40C4621E1D7B400DE8D34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B40C4421E1D7B400DE8D34 /* Main.storyboard */; };
@@ -14,6 +23,7 @@
 		C6B40C4B21E1D7B900DE8D34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B40C4921E1D7B900DE8D34 /* LaunchScreen.storyboard */; };
 		C6B40C5621E1D7B900DE8D34 /* PotholeMonitorTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B40C5521E1D7B900DE8D34 /* PotholeMonitorTestTests.swift */; };
 		C6B40C6121E1D7B900DE8D34 /* PotholeMonitorTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B40C6021E1D7B900DE8D34 /* PotholeMonitorTestUITests.swift */; };
+		CCC78A6E60C0D73E0ECAC44D /* Pods_PotholeMonitorTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93765A58AE6B8D20E0A647CB /* Pods_PotholeMonitorTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E3D75CAFE3748963F197DFC /* Pods_PotholeMonitorTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PotholeMonitorTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4822169A8C182525A6AD2319 /* Pods-PotholeMonitorTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotholeMonitorTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-PotholeMonitorTest/Pods-PotholeMonitorTest.release.xcconfig"; sourceTree = "<group>"; };
+		7323FBA9CBF397F4983ECAE0 /* Pods-PotholeMonitorTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotholeMonitorTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PotholeMonitorTest/Pods-PotholeMonitorTest.debug.xcconfig"; sourceTree = "<group>"; };
+		84F6D2A121F3083D0035A92D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84F6D2A321F324510035A92D /* PublicMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicMapViewController.swift; sourceTree = "<group>"; };
+		93765A58AE6B8D20E0A647CB /* Pods_PotholeMonitorTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PotholeMonitorTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BFEAD4250065B05CEEA26C9 /* Pods-PotholeMonitorTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotholeMonitorTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PotholeMonitorTestTests/Pods-PotholeMonitorTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A8C7FD6EFF0BDDE3F37365A2 /* Pods-PotholeMonitorTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotholeMonitorTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PotholeMonitorTestTests/Pods-PotholeMonitorTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		C60CD03E21E76E0600BD9D29 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C683CAC321EB2BB70008347C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C683CAC521EB2F960008347C /* notification.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = notification.mp3; sourceTree = "<group>"; };
+		C683CAC721EB3BEE0008347C /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		C683CAC921EB3C020008347C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C6B40C3D21E1D7B400DE8D34 /* PotholeMonitorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PotholeMonitorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B40C4021E1D7B400DE8D34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6B40C4221E1D7B400DE8D34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +70,9 @@
 		C6B40C5C21E1D7B900DE8D34 /* PotholeMonitorTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PotholeMonitorTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B40C6021E1D7B900DE8D34 /* PotholeMonitorTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotholeMonitorTestUITests.swift; sourceTree = "<group>"; };
 		C6B40C6221E1D7B900DE8D34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C95C7207B06E8FAC6B7AA308 /* Pods-PotholeMonitorTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotholeMonitorTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PotholeMonitorTestUITests/Pods-PotholeMonitorTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E05092CC8244148712055A9C /* Pods-PotholeMonitorTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotholeMonitorTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PotholeMonitorTestUITests/Pods-PotholeMonitorTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E21DDF28816702B508D2E442 /* Pods_PotholeMonitorTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PotholeMonitorTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +80,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C683CAC421EB2BB70008347C /* AVFoundation.framework in Frameworks */,
+				C60CD03F21E76E0600BD9D29 /* CoreLocation.framework in Frameworks */,
+				CCC78A6E60C0D73E0ECAC44D /* Pods_PotholeMonitorTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				888A8D02DF8FBE0A5A0EC852 /* Pods_PotholeMonitorTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +98,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BEA6BFD115A7F5C175617B /* Pods_PotholeMonitorTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7088932823CDD057334D8F00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7323FBA9CBF397F4983ECAE0 /* Pods-PotholeMonitorTest.debug.xcconfig */,
+				4822169A8C182525A6AD2319 /* Pods-PotholeMonitorTest.release.xcconfig */,
+				9BFEAD4250065B05CEEA26C9 /* Pods-PotholeMonitorTestTests.debug.xcconfig */,
+				A8C7FD6EFF0BDDE3F37365A2 /* Pods-PotholeMonitorTestTests.release.xcconfig */,
+				E05092CC8244148712055A9C /* Pods-PotholeMonitorTestUITests.debug.xcconfig */,
+				C95C7207B06E8FAC6B7AA308 /* Pods-PotholeMonitorTestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C60CD03D21E76E0600BD9D29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C683CAC321EB2BB70008347C /* AVFoundation.framework */,
+				C60CD03E21E76E0600BD9D29 /* CoreLocation.framework */,
+				93765A58AE6B8D20E0A647CB /* Pods_PotholeMonitorTest.framework */,
+				E21DDF28816702B508D2E442 /* Pods_PotholeMonitorTestTests.framework */,
+				1E3D75CAFE3748963F197DFC /* Pods_PotholeMonitorTestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C6B40C3421E1D7B400DE8D34 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +137,8 @@
 				C6B40C5421E1D7B900DE8D34 /* PotholeMonitorTestTests */,
 				C6B40C5F21E1D7B900DE8D34 /* PotholeMonitorTestUITests */,
 				C6B40C3E21E1D7B400DE8D34 /* Products */,
+				C60CD03D21E76E0600BD9D29 /* Frameworks */,
+				7088932823CDD057334D8F00 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +157,15 @@
 			children = (
 				C6B40C4021E1D7B400DE8D34 /* AppDelegate.swift */,
 				C6B40C4221E1D7B400DE8D34 /* ViewController.swift */,
+				C683CAC721EB3BEE0008347C /* MenuViewController.swift */,
+				C683CAC921EB3C020008347C /* MapViewController.swift */,
+				84F6D2A321F324510035A92D /* PublicMapViewController.swift */,
 				C6B40C4421E1D7B400DE8D34 /* Main.storyboard */,
 				C6B40C4721E1D7B900DE8D34 /* Assets.xcassets */,
 				C6B40C4921E1D7B900DE8D34 /* LaunchScreen.storyboard */,
+				C683CAC521EB2F960008347C /* notification.mp3 */,
 				C6B40C4C21E1D7B900DE8D34 /* Info.plist */,
+				84F6D2A121F3083D0035A92D /* GoogleService-Info.plist */,
 			);
 			path = PotholeMonitorTest;
 			sourceTree = "<group>";
@@ -132,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6B40C6521E1D7B900DE8D34 /* Build configuration list for PBXNativeTarget "PotholeMonitorTest" */;
 			buildPhases = (
+				1412D3A602CA65C008798B6A /* [CP] Check Pods Manifest.lock */,
 				C6B40C3921E1D7B400DE8D34 /* Sources */,
 				C6B40C3A21E1D7B400DE8D34 /* Frameworks */,
 				C6B40C3B21E1D7B400DE8D34 /* Resources */,
+				67C6786343411321331172E5 /* [CP] Copy Pods Resources */,
+				C4D3A93C5E5A140CF49C68A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +215,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6B40C6821E1D7B900DE8D34 /* Build configuration list for PBXNativeTarget "PotholeMonitorTestTests" */;
 			buildPhases = (
+				3A95D6CF1DF0708D0F717B2B /* [CP] Check Pods Manifest.lock */,
 				C6B40C4D21E1D7B900DE8D34 /* Sources */,
 				C6B40C4E21E1D7B900DE8D34 /* Frameworks */,
 				C6B40C4F21E1D7B900DE8D34 /* Resources */,
@@ -167,6 +234,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6B40C6B21E1D7B900DE8D34 /* Build configuration list for PBXNativeTarget "PotholeMonitorTestUITests" */;
 			buildPhases = (
+				891C535DE85C84F697936007 /* [CP] Check Pods Manifest.lock */,
 				C6B40C5821E1D7B900DE8D34 /* Sources */,
 				C6B40C5921E1D7B900DE8D34 /* Frameworks */,
 				C6B40C5A21E1D7B900DE8D34 /* Resources */,
@@ -193,6 +261,11 @@
 				TargetAttributes = {
 					C6B40C3C21E1D7B400DE8D34 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 					C6B40C5021E1D7B900DE8D34 = {
 						CreatedOnToolsVersion = 10.1;
@@ -229,7 +302,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C683CAC621EB2F960008347C /* notification.mp3 in Resources */,
 				C6B40C4B21E1D7B900DE8D34 /* LaunchScreen.storyboard in Resources */,
+				84F6D2A221F3083D0035A92D /* GoogleService-Info.plist in Resources */,
 				C6B40C4821E1D7B900DE8D34 /* Assets.xcassets in Resources */,
 				C6B40C4621E1D7B400DE8D34 /* Main.storyboard in Resources */,
 			);
@@ -251,13 +326,137 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1412D3A602CA65C008798B6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PotholeMonitorTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A95D6CF1DF0708D0F717B2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PotholeMonitorTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67C6786343411321331172E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PotholeMonitorTest/Pods-PotholeMonitorTest-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PotholeMonitorTest/Pods-PotholeMonitorTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		891C535DE85C84F697936007 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PotholeMonitorTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4D3A93C5E5A140CF49C68A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PotholeMonitorTest/Pods-PotholeMonitorTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PotholeMonitorTest/Pods-PotholeMonitorTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C6B40C3921E1D7B400DE8D34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C6B40C4321E1D7B400DE8D34 /* ViewController.swift in Sources */,
+				84F6D2A421F324510035A92D /* PublicMapViewController.swift in Sources */,
+				C683CAC821EB3BEE0008347C /* MenuViewController.swift in Sources */,
 				C6B40C4121E1D7B400DE8D34 /* AppDelegate.swift in Sources */,
+				C683CACA21EB3C020008347C /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,9 +629,11 @@
 		};
 		C6B40C6621E1D7B900DE8D34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7323FBA9CBF397F4983ECAE0 /* Pods-PotholeMonitorTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FV6HV933BC;
 				INFOPLIST_FILE = PotholeMonitorTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,9 +648,11 @@
 		};
 		C6B40C6721E1D7B900DE8D34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4822169A8C182525A6AD2319 /* Pods-PotholeMonitorTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FV6HV933BC;
 				INFOPLIST_FILE = PotholeMonitorTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -464,6 +667,7 @@
 		};
 		C6B40C6921E1D7B900DE8D34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BFEAD4250065B05CEEA26C9 /* Pods-PotholeMonitorTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +688,7 @@
 		};
 		C6B40C6A21E1D7B900DE8D34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8C7FD6EFF0BDDE3F37365A2 /* Pods-PotholeMonitorTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +709,7 @@
 		};
 		C6B40C6C21E1D7B900DE8D34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E05092CC8244148712055A9C /* Pods-PotholeMonitorTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +729,7 @@
 		};
 		C6B40C6D21E1D7B900DE8D34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C95C7207B06E8FAC6B7AA308 /* Pods-PotholeMonitorTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>191153246438-cie9goifc3o3m6gk3p2hirq4gbb6d5ce.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.191153246438-cie9goifc3o3m6gk3p2hirq4gbb6d5ce</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDttBbHYvpp5crYkvC_WrxdvVad8e1fjaY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>191153246438</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>GG.PotholeMonitorTest</string>
+	<key>PROJECT_ID</key>
+	<string>oakridgepotholeapp</string>
+	<key>STORAGE_BUCKET</key>
+	<string>oakridgepotholeapp.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:191153246438:ios:d8a36db8dab49dbe</string>
+	<key>DATABASE_URL</key>
+	<string>https://oakridgepotholeapp.firebaseio.com</string>
+</dict>
+</plist>
