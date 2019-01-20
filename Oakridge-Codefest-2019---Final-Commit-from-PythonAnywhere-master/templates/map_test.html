@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Pothole Test</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: {lat: 12.8873, lng: 77.7478},
+          mapTypeId: 'terrain'
+        });
+
+        var marker = new google.maps.Marker({
+            position: {lat:{{ latArray[0] }}, lng:{{ lngArray[0] }}},
+            map: map,
+            title: '{{ potholeDepth[0] }}'
+        }); //marker showing exact coords of pothole
+
+        var polyLineCoords = [
+            {lat: {{ latArray[0] }}, lng: {{ lngArray[0] }}},
+            {lat: {{ latArray[1] }}, lng: {{ lngArray[1] }}},
+            {lat: {{ latArray[2] }}, lng: {{ lngArray[2] }}},
+            {lat: {{ latArray[3] }}, lng: {{ lngArray[3] }}},
+            {lat: {{ latArray[4] }}, lng: {{ lngArray[4] }}},
+            {lat: {{ latArray[5] }}, lng: {{ lngArray[5] }}},
+            {lat: {{ latArray[6] }}, lng: {{ lngArray[6] }}},
+            {lat: {{ latArray[7] }}, lng: {{ lngArray[7] }}}
+        ];
+        var theLine = new google.maps.Polyline({
+          path: polyLineCoords,
+          geodesic: true,
+          strokeColor: '{{ strokeColour }}',
+          strokeOpacity: 1.0,
+          strokeWeight: 2
+        });
+
+        theLine.setMap(map);
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?v=3key=AIzaSyAdyny3ENc6xVwRj-SwphWdUuGfesd_qgY&callback=initMap">
+    </script>
+  </body>
+</html>
