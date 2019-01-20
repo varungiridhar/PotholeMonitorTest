@@ -62,6 +62,44 @@ PODS:
   - GoogleUtilities/UserDefaults (5.3.6):
     - GoogleUtilities/Logger
   - leveldb-library (1.20)
+  - MaterialComponents/AnimationTiming (73.1.1)
+  - MaterialComponents/Buttons (73.1.1):
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/private/Shapes
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - MaterialComponents/Ink (73.1.1):
+    - MaterialComponents/private/Math
+  - MaterialComponents/OverlayWindow (73.1.1):
+    - MaterialComponents/private/Application
+  - MaterialComponents/private/Application (73.1.1)
+  - MaterialComponents/private/KeyboardWatcher (73.1.1):
+    - MaterialComponents/private/Application
+  - MaterialComponents/private/Math (73.1.1)
+  - MaterialComponents/private/Overlay (73.1.1)
+  - MaterialComponents/private/Shapes (73.1.1):
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - MaterialComponents/ShadowElevations (73.1.1)
+  - MaterialComponents/ShadowLayer (73.1.1):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/Snackbar (73.1.1):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Buttons
+    - MaterialComponents/OverlayWindow
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/KeyboardWatcher
+    - MaterialComponents/private/Overlay
+    - MaterialComponents/Typography
+  - MaterialComponents/Typography (73.1.1):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+  - MDFInternationalization (2.0.0)
+  - MDFTextAccessibility (2.0.0)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
@@ -74,6 +112,7 @@ DEPENDENCIES:
   - GoogleMaps
   - GooglePlacePicker
   - GooglePlaces
+  - MaterialComponents/Snackbar
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -89,6 +128,9 @@ SPEC REPOS:
     - GooglePlaces
     - GoogleUtilities
     - leveldb-library
+    - MaterialComponents
+    - MDFInternationalization
+    - MDFTextAccessibility
     - nanopb
 
 SPEC CHECKSUMS:
@@ -104,8 +146,11 @@ SPEC CHECKSUMS:
   GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
   GoogleUtilities: 95996bea7c7d9b8fb811b7507669a4a8762f80c7
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  MaterialComponents: b9b5743f650af50c5138e517a0930a3ade0cd09f
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: 4b6d5eab11a675b03de70c7102448f7a13962b01
+PODFILE CHECKSUM: 4e05312bb59b3e9bb3f0bf389eb1442f4830eb0e
 
 COCOAPODS: 1.5.3

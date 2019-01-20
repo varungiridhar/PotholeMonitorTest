@@ -36,7 +36,7 @@ class PublicMapViewController: UIViewController, CLLocationManagerDelegate {
         self.view.addSubview(mapView)
         //LOCATION
         locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         locationManager.requestAlwaysAuthorization()
         getData()
     }
@@ -48,8 +48,8 @@ class PublicMapViewController: UIViewController, CLLocationManagerDelegate {
         ref.observe(DataEventType.value) { (snapshot) in
             var noOfLoc = snapshot.childrenCount - 1
             for i in 0...noOfLoc{
-                self.ref.child(String(i)).child("latitude").observe(DataEventType.value) { (latsnapshot) in
-                    self.ref.child(String(i)).child("longitude").observe(DataEventType.value) { (longsnapshot) in
+                self.ref.child(String(i)).child("locationLatitude").observe(DataEventType.value) { (latsnapshot) in
+                    self.ref.child(String(i)).child("locationLongitude").observe(DataEventType.value) { (longsnapshot) in
                         self.ref.child(String(i)).child("potholeDepth").observe(DataEventType.value) { (depthsnapshot) in
                             
                             self.setMap(lat: latsnapshot, long: longsnapshot, potholeDepth: depthsnapshot, index : i, upperIndex : noOfLoc)
@@ -73,16 +73,14 @@ class PublicMapViewController: UIViewController, CLLocationManagerDelegate {
         potholeLocationMarker.icon = UIImage.init(named: "potholeIcon")
         potholeLocationMarker.map = mapView
         mapView.animate(toLocation: potholeLocation)
-        
+        var totalPotholeDepth = 0.0
+
         if(index == Int(upperIndex)){
-            var totalPotholeDepth = 0.0
             
             for i in 0...upperIndex{
                 path.add(allPotholeLocations[Int(i)])
                 totalPotholeDepth = (totalPotholeDepth + allPotholeDepth[Int(i)])
-
-                //MACHINE LEARNING PART
-                //OOOOOOF
+                print(allPotholeLocations[Int(i)])
                 
                 
             }

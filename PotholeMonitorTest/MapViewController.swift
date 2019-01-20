@@ -14,8 +14,9 @@ import GoogleMaps
 import GooglePlaces
 import Firebase
 import AVFoundation
-class MapViewController: UIViewController, CLLocationManagerDelegate, AVAudioPlayerDelegate {
+class MapViewController: UIViewController, CLLocationManagerDelegate, AVAudioPlayerDelegate, GMSMapViewDelegate {
     
+    @IBOutlet weak var alertView: UIView!
     @IBOutlet weak var potholeLabel: UILabel!
     var motionManager = CMMotionManager()
     var player : AVAudioPlayer = AVAudioPlayer()
@@ -27,6 +28,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, AVAudioPla
     var allPotholeDepth : [Double] = []
     let path = GMSMutablePath()
     var ref : DatabaseReference!
+    var popup : UIView!
     
     @IBOutlet weak var potholeAlert: UIImageView!
     
@@ -42,7 +44,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, AVAudioPla
         self.view.addSubview(mapView)
         //LOCATION
         locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         
@@ -64,14 +66,16 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, AVAudioPla
         let camera = GMSCameraPosition.camera(withTarget: myLocation, zoom: 22.0)
         self.mapView.animate(to: camera)
         print("run")
+        print(location)
         
         
         
-        motionManager.accelerometerUpdateInterval = 0.2
+        motionManager.accelerometerUpdateInterval = 0.2 
         motionManager.startAccelerometerUpdates(to: OperationQueue.current!) { (data, error) in
             if let acData = data{
-                if acData.acceleration.y < -1.2{
+                if acData.acceleration.y < -1.0{
                     
+                    self.showAlert()
                     
                     
                     
@@ -121,13 +125,18 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, AVAudioPla
         
         let upperIndex = allPotholeDepth.endIndex - 1
         var totalPotholeDepth = 0.0
+        var overPotholeNo = 0
         for i in 0...upperIndex{
             totalPotholeDepth = (totalPotholeDepth + allPotholeDepth[i])
             path.add(allPotholeLocations[i])
-            
+            var latlong = "\(allPotholeLocations[i].latitude) \(allPotholeLocations[i].longitude)"
+            print(latlong)
+            ref.child(String(i)).child("latlong").setValue(latlong)
             ref.child(String(i)).child("locationLatitude").setValue(allPotholeLocations[i].latitude)
             ref.child(String(i)).child("locationLongitude").setValue(allPotholeLocations[i].longitude)
             ref.child(String(i)).child("potholeDepth").setValue(allPotholeDepth[i])
+            
+
             
         }
         
@@ -164,6 +173,26 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, AVAudioPla
         allPotholeLocations.removeAll()
         
     }
+    func showAlert(){
+        //597
+        popup = UIView(frame: CGRect(x: 0, y: 579, width: 375, height: 12))
+        popup.backgroundColor = UIColor.red
+        
+        // show on screen
+        self.view.addSubview(popup)
+        
+        // set the timer
+        Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.dismissAlert), userInfo: nil, repeats: false)
+    }
     
-    
+    @objc func dismissAlert(){
+        if popup != nil { // Dismiss the view from here
+            popup.removeFromSuperview()
+        }
+    }
 }
+    
+    
+
+
+

@@ -15,9 +15,9 @@ import GooglePlaces
 import AVFoundation
 class ViewController: UIViewController{
 
+    @IBOutlet weak var symbol: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
 }

@@ -11,6 +11,7 @@ target 'PotholeMonitorTest' do
   pod 'GoogleMaps'
   pod 'Firebase/Core'
   pod 'Firebase/Database'
+  pod 'MaterialComponents/Snackbar'
   target 'PotholeMonitorTestTests' do
     inherit! :search_paths
 
